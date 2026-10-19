@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="A short academic profile with contact information, education, and research interests."
+    />
+    <title>Your Name — Academic Profile</title>
+    <style>
+      :root {
+        color-scheme: light;
+        font-family: Georgia, "Times New Roman", serif;
+        color: #242b36;
+        background: #f5f7fa;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        min-height: 100vh;
+        margin: 0;
+        padding: 64px 20px;
+        display: grid;
+        place-items: center;
+      }
+
+      main {
+        width: min(100%, 680px);
+        padding: clamp(28px, 7vw, 64px);
+        background: #fff;
+        border: 1px solid #e5e9ef;
+        border-radius: 12px;
+        box-shadow: 0 18px 50px rgb(33 49 73 / 7%);
+      }
+
+      h1 {
+        margin: 0;
+        font-size: clamp(2.2rem, 7vw, 3.5rem);
+        line-height: 1.08;
+        letter-spacing: -0.04em;
+      }
+
+      .email {
+        margin: 14px 0 38px;
+        font-family: system-ui, sans-serif;
+        font-size: 0.98rem;
+      }
+
+      a {
+        color: #315f91;
+        text-decoration-thickness: 1px;
+        text-underline-offset: 3px;
+      }
+
+      h2 {
+        margin: 0 0 12px;
+        font-size: 1.2rem;
+      }
+
+      p {
+        margin: 0;
+        color: #4e5868;
+        font-size: 1.05rem;
+        line-height: 1.8;
+      }
+
+      @media (max-width: 480px) {
+        body {
+          padding: 24px 14px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <header>
+        <h1>Your Name</h1>
+        <p class="email"><a href="mailto:your.email@example.com">your.email@example.com</a></p>
+      </header>
+
+      <section aria-labelledby="about-heading">
+        <h2 id="about-heading">About</h2>
+        <p>
+          I attended [High School Name] and am currently studying [University Major]
+          at [University Name]. My research interests include [Research Interest 1],
+          [Research Interest 2], and [Research Interest 3].
+        </p>
+      </section>
+    </main>
+  </body>
+</html>
